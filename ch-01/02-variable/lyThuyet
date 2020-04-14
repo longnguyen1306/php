@@ -1,0 +1,27 @@
+* làm sao để biết được biến đó đang lưu giá trị thuộc kiểu dữ liệu nào.
+	-  có 2 cách để xác định kiểu dữ liệu của biến:
+		+ sử dụng hàm: gettype()
+		+ sử dụng hàm: var_dump()
+
+
+* Có thể chuyển đổi kiểu dữ liệu của một biến nào đó hay không
+	- chúng ta hoàn toàn có thể chuyển đổi kiểu dữ liệu của biến đó bằng 1 trong 2 cách sau:
+		+ sử dụng cách ép kiêu
+		+ sử đụng hàm: settype()
+
++ có hàm nào kiểm tra kiểu dữ liệu của 1 biến hay không 
+	- để kiểu tra kiểu dữ liệu của 1 biến ta có thể dùng các hàm sau:
+		+ is_numberic(),
+		+ is_float(),
+		+ is_string(),
+		+ is_array(),
+		+ is_object(),
+		...
+
++ trong toán học ngoài biến số còn có khái niệm hằng số, PHP có hỗ trợ hằng số hay không
+	- khác với biến, hằng số có giá trị không thể thay đổi đc 
+	- định nghĩa rằng
+		<?php
+			define("Pi", 3,14);
+			echo "valuew PI: " . Pi;
+		?>

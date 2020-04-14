@@ -1,0 +1,7 @@
+* Khài niêm toán tử
+	- toán tử số học: + - * / %
+	- toán tử gán: += -= *= /= %=
+	- toán tử: ++ --
+	- toán tử so sánh: > < >= <= == === != <> !===
+	- toán tử logic: AND OR XOR && || !
+	- toán tử điều kiện
