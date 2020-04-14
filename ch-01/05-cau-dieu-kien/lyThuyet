@@ -1,0 +1,14 @@
+1/ có mấy loại câu điều kiện trong PHP
+	- hai câu lệnh thường được sử dụng trong PHP
+		+ câu điều kiện IF ... ELSE 
+		+ câu điều kiên SWITCH
+
+2/ sử dụng câu điều kiện IF ELSE như thế nào
+	- trong nhóm điều kiện IF có 3 câu điều kiện: IF, IF ... ELSE, IF ... ELSEIF ELSE
+
+		<?php
+			$number = 12;
+			if($number >= 0) {
+				echo 'so dương';
+			}
+		?>

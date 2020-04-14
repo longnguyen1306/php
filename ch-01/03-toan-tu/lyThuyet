@@ -1,7 +1,74 @@
-* Khài niêm toán tử
+1/ Khài niêm toán tử
 	- toán tử số học: + - * / %
 	- toán tử gán: += -= *= /= %=
 	- toán tử: ++ --
 	- toán tử so sánh: > < >= <= == === != <> !===
 	- toán tử logic: AND OR XOR && || !
 	- toán tử điều kiện
+
+2/ thực hiện + - * / trong php như thế nào
+	<?php
+		$x = 2;
+		$y = $x + 2;
+	?>
+
+	- các toán tử này nắm trong nhóm 'toán tử số học', trong nhóm này chúng ta còn có thể thực hiện các phép toán
+		+ % chia lấy dư
+		+ - phủ định của một số
+
+3/ khi tôi viết $x = $x * 5 vẻ hơi dài có cách viết ngắn hơn không 
+	<?php
+		$x = 2;
+		$x *= 5;
+	?>
+
+	- chúng ta có thể áp dụng cách viết này cho các trường hợp + - * /
+	- cách viết này thuộc nhóm 'toán tử gán' : += -= /= *= %=
+
+4/ ++$x và $x++ có gì khác nhau
+	- ++$x tăng x lên 1 đơn vị sau đó trả về giá trị của x
+	- $x++ trả về giá trị của x sau đó tăng x lên một đơn vị 
+	- --$x giảm x xuống 1 đơn vị sao đó trả về giá trị của x
+	- $x-- trả vể giá trị của x sau đó giảm x xuống 1 đơn vị
+
+5/ Các phép toán so sánh
+	các toán tử nằm trong nhóm "toán tử so sánh", trong nhóm này chúng ta có thể thực hiện các phép toán 
+	- == so sánh bằng
+	- ===  so sánh bằng tuyệt đối 
+	- != so sánh khác
+	- !=== so sánh khác tuyệt đối 
+	- <> so sánh khác
+
+6/ toán tử logic là gì
+	- AND : $x and $y, trả về true nếu x và y đều mang giá trị true
+		$x = 3; $y = 6;
+		($x < 8 and $y >1) 
+			true
+
+	- OR: $x or $y, trả về true nếu x hoặc y đều mang giá trị true
+		( $x >= 8 or $y > 1 )
+			true
+
+	- XOR; $y xor $y, trả về true nếu chỉ x hoặc y mang giá trị true
+		( $x < 8 xor $y > 1 )
+			true
+
+	- && : $x && $y , trả về true nếu x và y đều mang giá trị true
+		( $x > 8 && $y >1 )
+			false
+	- ||: $x || $y, trả về true nếu x hoặc y mang giá trị true
+		( $x < 8 or $y > 1 )
+			true
+	- ! : !$x, trả về true nếu x là false
+		( !($x==$y) )
+			true
+
+7/ toán tử điều kiện là gì 
+	- cú phapsL (condition) ? value1 : value2
+	- ví dụ:
+		<?php
+			$variable = "PHP training";
+			$result = (is_string($variable)) ? "Chuỗi" : "Không phải chuổi";
+
+			echo $result;
+		?>

@@ -1,0 +1,24 @@
+1/ tạo form bằng cách nào?
+	-  sử dụng mã nguồn html để tạo form
+
+		<form method="post" action="proccess.php" name="main-form">
+			<input type="text" name="email" />
+			<input type="password" name="password" />
+		</form>
+
+	- method: cách thức dữ liệu được gởi đi ( post hoặc get )
+	- action: xác định trang / tập tin các dữ liệu được gởi đến để xử lý
+	- name: tên của form
+
+2/ hai phương thức post và get có gì khác nhau ?
+	- sau khi người dung tiến hành 'submit form' cả hai phương thức này đều tiến hành gởi dữ liệu đến server, tuy nhiên:	
+		+ POST:
+			localhost/proccess.php
+
+		+ GET:
+			localhost/proccess.php?name=lan&age=24
+
+3/ làm sao lấy giá trị nhập vào trên form
+	- đối với form có method là post: $_POST
+	- đối với form có method là get: $_GET
+	- sử dụng $_REQUEST cho cả 2 phương thức trên 
